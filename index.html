@@ -1,0 +1,183 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 50px;
+  text-align: center;
+  background-color: gray;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+
+
+#Home {background-image: url("13.jpg");
+color: black;}
+#News {background-image: url("2.jpg");}
+#Contact {background-image: url("4.jpg");}
+#About {background-image: url("7.jpg");}
+#Status {background-image: url("5.jpg");
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Necarose Adajar Robamba</h2>
+  <p>Wattpad is my life</p>
+  </div>
+
+
+<button class="tablink" onclick="openPage('Home', this, 'red')">History</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">about me</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">html</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">programing</button>
+<button class="tablink" onclick="openPage('Status', this, 'black')">contact me</button>
+
+<div id="Home" class="tabcontent">
+  <p><font size="5" face="tahoma">Ako diay si necarose Robamba akong nickname kay kay or neca </p>
+  <p>wala koy labot sa i ingon sa akoa ang importante wala koy gi sakitan na tao</p>
+  <p>na matay akong akong bag o palang atong april 19 2003 pero bisan ug taod2 na to na nahitabo pero presko pa kaayo ang samad sa akong dughan tungod sa iyahang kalit na pag kawala pero i know na naa reason c god bantog iya tong gi buhat </p>
+  <p>2 maningkamot kay pobre ra ta</p>
+  <p>acriminilogy ang akong gusto na kuhaon kay akong pusilon ang baba sa pataka ra ug yawit hahah joke para makatabang sa akong family</p>
+</div>
+
+<div id="News" class="tabcontent">
+ <p><font size="5" face="tahoma"><u><b>Personal data</b></u></font></br>
+Date of Birth:September 10,2006</br>
+Place of birth:Dulag butuan City</br>
+Civil Status: Single</br>
+Citizenship: Filipino </br>
+Height:151cm</br>
+weight: 50 lbs</br>
+    Father's Name:Necasio Robamba</br>
+    Monther's Name:Rosilyn Robamba</br>
+    SSS No. None Application</br>
+    TIN #:None Application<font></br>
+<p> <font size="5" face="tahoma"><u><b>Educational Background</b></u></font></br>
+    <font size="5">Primary: Emeldamar elementary School</br>
+                            Emeldamar Butuan City</br>
+                            2016-2017</br>
+    <font size="5"> Secondary: Butuan City Comprehensive High School</br>
+                             Dulag Butuan City
+                             2020-2021
+    <font size="5">Tertiary: None Applicable</font></br>
+<p> <font size="5" face="tahoma"><u><b>Employment History</b></u></font></br>
+    <font size="5">Mercadejas Inc.</br>
+     Metro Manila</br>
+     Maneger</br>
+     September 17,2022 to December 5,2023</font>
+</div>
+
+<div id="Contact" class="tabcontent">
+   <p><font size="5"><a href="personal1.html">Activity1</a></font></p>
+  <p><font size="5"><a href="personal2.html">Activity2</a></font></p>
+  <p><font size="5"><a href="personal3.html">Activity3</a></font></p>
+  </div>
+</div>
+
+<div id="About" class="tabcontent">
+  <h1 style="color:Black;"</h1>
+        <h1><table>
+          <tr>
+            <th><a style="color: black;" href="activity1.html">Activity 1</a></th>
+           </tr> 
+           <tr>
+            <th><a style="color: black" href="activity2.html">Activity 2</a></th>
+           </tr> 
+          <tr>
+            <th><a style="color:  black;" href="activity3.html">Activity 3</a></th>
+           </tr> 
+           <tr>
+            <th><a style="color:  black;" href="activity4.html">Activity 4</a></th>
+           </tr> 
+           <tr>
+            <th><a style="color:  black;" href="activity5.html">Activity 5</a></th>
+           </tr>
+           <tr>
+            <th><a style="color:  black;" href="activity6.html">Activity 6</a></th>
+           </tr> 
+           <tr>
+            <th><a style="color: black;" href="activity7.html">Activity 7</a></th>
+           </tr> 
+ </table>           
+</div>
+<div id="Status" class="tabcontent">
+ <head>
+  <center>
+    <h2><u><p>Contact Me</h2></u></p>
+<p>Contact #:09050375695</p>
+<p>Email:NECAROSE,ROBAMBA@gmail.com</p>
+<P>Fb:Necarose Robamba</P>
+<br>
+</center>
+<center>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</center>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
